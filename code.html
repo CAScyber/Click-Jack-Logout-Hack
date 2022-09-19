@@ -1,0 +1,38 @@
+
+<!DOCTYPE HTML>
+<html>
+
+<body style="margin:10px;padding:10px">
+
+  <input type="button" onclick="openWin();" value="Click">
+
+</body>
+
+
+<iframe name="Frame1" width="1" height="1">></iframe>
+
+
+
+
+<script>
+if (navigator.clipboard) {
+
+  console.log('Clipboard API available');
+
+}
+
+</script>
+
+
+
+
+</html>
+
+
+
+<script>
+function openWin() {
+  const myWindow = window.open("http://superlogout.com", "Frame1");
+  setTimeout(function() {myWindow.close()}, 5000);
+}
+</script>
